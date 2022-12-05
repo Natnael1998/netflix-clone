@@ -5,12 +5,15 @@ import { AuthContextProvider } from "./context/AuthContext";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Searchpage from "./pages/Searchpage";
 import Signup from "./pages/Signup";
+
 
 function App() {
   return (
     <>
     <AuthContextProvider>
+    
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,6 +22,7 @@ function App() {
         <Route path="/account" element={<ProtectedRoute>
           <Account />
           </ProtectedRoute>  } />
+        <Route path="/search" element={<Searchpage />} />
       </Routes>
     </AuthContextProvider>
      

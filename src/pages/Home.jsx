@@ -5,6 +5,7 @@ import requests from '../Requests'
 const Home = () => {
   return (
     <>
+  
         <Main />
         <Row rowId="1" title="Up Coming" fetchURL={requests.requestUpcoming} />
         <Row rowId="2" title="Popular" fetchURL={requests.requestPopular} />
