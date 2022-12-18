@@ -25,7 +25,7 @@ const Searchpage = () => {
     
    <Main />
    <div className='flex-row items-center justify-center mx-10'>
-   <div className="flex  w-[50%]    items-center my-12 ">
+   <div className="flex  w-[50%]    items-center  ">
             <input
               className="text-white text-xl bg-slate-900/80 outline-none rounded-xl w-full h-[60px] "
               id="s"

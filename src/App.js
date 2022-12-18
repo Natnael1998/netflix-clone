@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Discription from "./components/Discription";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthContextProvider } from "./context/AuthContext";
@@ -23,6 +24,8 @@ function App() {
           <Account />
           </ProtectedRoute>  } />
         <Route path="/search" element={<Searchpage />} />
+        <Route path="/discription/:id" element={<Discription />} />
+
       </Routes>
     </AuthContextProvider>
      
