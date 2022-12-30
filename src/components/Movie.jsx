@@ -29,7 +29,7 @@ const saveShow = async () => {
   }
 }
   return (
-    <Link to={`/discription:${items.id}`} >
+    
 <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 mx-2 movie' key={items.id} >
                     <img className='w-full h-[350px]  rounded block object-cover' src={`https://image.tmdb.org/t/p/w500/${items.backdrop_path}`} alt={items?.title} />
                     <div className='absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white '>
@@ -37,11 +37,15 @@ const saveShow = async () => {
                    <p onClick={saveShow}>
                     {like ? <FaHeart  className='absolute top-4 left-4 text-red-600' /> : <FaRegHeart className='absolute top-4 left-4 text-grey-300' />}
                    </p>
+                   <Link to={`/discription/${items.id}`} >
+                   <button  className="absolute bottom-10 left-10 hover:underline" >More about movie</button>
+                   </Link>
                     </div>
+
 
                     </div>
 
-    </Link>
+    
     
   )
 }
