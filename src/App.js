@@ -24,7 +24,10 @@ function App() {
           <Account />
           </ProtectedRoute>  } />
         <Route path="/search" element={<Searchpage />} />
-        <Route path="/discription/:id" element={<Discription />} />
+        
+        <Route path="/discription/:id" element={<Discription />} >
+          <Route path=":id"></Route>
+        </Route>
 
       </Routes>
     </AuthContextProvider>

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "log";
+    src: url("./fonts/Nordic\ Alternative\ Regular.ttf");
+}
+
+
 .n{
     background-color: red ;
     opacity: 50%;
@@ -28,6 +34,11 @@
     margin-left: 5px;
     
     
+
+}
+.nav-logo{
+    font-family: "log","san-serif";
+    font-weight: 900;
 }
 @media (max-width:427px) {
     .nav-logo{
