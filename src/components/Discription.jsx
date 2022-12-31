@@ -11,7 +11,7 @@ const Discription = () => {
     height : "900px",
     width : "100%",
     playerVars : {
-      autoplay :true,
+      autoplay :1,
     }
   }
   const params = useParams()
