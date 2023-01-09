@@ -24,13 +24,14 @@ const Navbar = () => {
 
       <Link to="/">
         <h1 className="text-red-600 text-3xl md:text-4xl font-bold cursor-pointer nav-logo">
-          &lt; NATI &#47;&gt;
+          &lt; NATI movies&#47;&gt;
         </h1>
       </Link>
       </div>
       
-            <div className="flex items-center">
+            <div className="flex items-center justify-between">
           <Link to="/search" >
+            
             <i className=" nav-search">
             <FaSearch className="text-red-600 h-[60px] w-[33px] mx-5 nav-search " />
 
